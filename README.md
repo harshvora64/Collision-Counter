@@ -9,3 +9,5 @@ The Python function listCollisions that takes the following five arguments:
 4. m: a non-negative integer,
 5. T: a non-negative float,
 and returns a list of collisions in chronological order that ends as soon as the first m collisions happen or time reaches T (whichever earlier). If the input results in fewer than m collisions and the last collision happens before time T, the list returned will contain all collisions in chronological order. Each collision is represented by a 3-tuple, with the t and x values of collisions rounded to 4 decimal digits.
+
+Time Complexity - O(n + m log n) - Linear in the number of collisions and logarithmic in the number of objects.
